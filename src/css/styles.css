@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #FF220C;
+    --secondary-color: #d33e43;
+    --accent-color: #9B7874;
+    --background-color: #666370;
+    --text-color: #34495e;
+}
+
+
+body {
+
+    color: var(--text-color);
+    background-color: white !important;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem !important;
+    color: var(--secondary-color);
+}
+
+.top-bar {
+    padding: 15px;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+.top-bar .carousel-inner .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+}
+
+@media (max-width: 576px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-item a {
+        font-size: 1rem !important;
+    }
+
+    .top-bar {
+        padding: 5px !important;
+    }
+} 
+
+.dropdown-item {
+    font-size: 1.2rem !important;
+}
+
+.dropdown-item:active {
+    background-color: var(--primary-color);
+}
+
+.btn-primary {
+    color: whitesmoke;
+    background-color: var(--primary-color);
+}
+
+.btn-primary:active {
+    color: whitesmoke;
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    color: whitesmoke;
+    background-color: var(--text-color);
+}
+
+.btn-primary:focus {
+    color: whitesmoke;
+    background-color: var(--text-color);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.title p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+p > a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+p > a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.footer-top {
+    background-color: var(--primary-color);
+}
+
+.footer-main {
+    background-color: var(--background-color);
+}
+
+.footer-header {
+    font-size: 1.6rem;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-title a {
+    text-decoration: none;
+    color: white;
+}
+.card-title a:hover {
+    color: var(--primary-color);
+}
+
+.card-img-top {
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.product-category{
+    color: var(--primary-color) !important;
+}
+
+#shippingDetails {
+    display: block;
+    /* Initially visible */
+    opacity: 1;
+    /* Initially fully opaque */
+    transition: opacity 0.3s;
+    /* Add a transition effect for opacity */
+}
+
+#sameAddress:checked+#shippingDetails {
+    opacity: 0;
+    /* When the checkbox is checked, make the div transparent */
+    pointer-events: none;
+    /* Disable pointer events for the hidden div */
+}
+
+.form-range {
+    width: 100%;
+}
+
+
+.hero .carousel-item{
+    max-height: 700px;
+    min-height: 300px;
+    background: no-repeat scroll center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.hero .carousel-item::before{
+    content: "";
+    display: block;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.4;
+}
+.hero .carousel-caption{
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.hero .carousel-caption h5 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero .carousel-caption p{
+    top: 2rem;
+}
+
+.slider-btn{
+    margin-top: 30px;
+}
+.slider-btn .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+}

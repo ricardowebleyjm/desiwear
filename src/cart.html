@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boostrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--Notfy CSS-->
+    <link rel="stylesheet" href="css/notyf.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Custom CSS -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>DesiWear - Online Fashion Store</title>
+
+    <meta name="description" content="DesiWear Pakistan top traditional clothing" />
+    <meta name="keywords" content="Traditional Clothing, Clothing, Pakistan Clothing, Desi, DesiWear" />
+    <meta property="og:title" content="DesiWear Clothing" />
+    <meta property="og:description" content="DesiWear Pakistan Traditional Clothing" />
+    <meta property="og:image" content="https://desiwear.jajobs.gq/images/logo.png" />
+    <meta property="og:url" content="https://desiwear.jajobs.gq" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@desiwear" />
+    <meta name="twitter:title" content="DesiWear Clothing" />
+    <meta name="twitter:description" content="DesiWear Pakistan Traditional Clothing" />
+    <meta name="twitter:image" content="https://desiwear.jajobs.gq/images/logo.png" />
+    <link rel="canonical" href="https://desiwear.jajobs.gq" />
+</head>
+
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="carousel slide carousel-fade" id="top-bar-carousel" data-bs-interval="3000"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">🎈🎈Sale on children items🎈🎈</a>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="free-shipping-banner">
+                            <a href="#">⏳⏳ Free shipping on orders over $50 ⏳⏳</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#top-bar-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#top-bar-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo.png" alt="DesiWea Logo" style="width:80px;" class="rounded-pill">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product_listing.html">Shop Now</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+    
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown pr-3">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Currency <span id="selectedCurrency"><i>USD</i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('USD')">USD</a></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('EUR')">EUR</a></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('GBP')">GBP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart (0)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i> Wishlist (0)
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown  ">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/images/logo.png" alt="Profile" class="rounded-circle" style="width:50px;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Items -->
+    <section class="h-100 cart-container">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h5 class="mb-3">
+                                        <a href="/" class="text-body" style="font-size: 1.5rem;">
+                                            Continue shopping
+                                        </a>
+                                    </h5>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <p class="mb-1">Shopping cart</p>
+                                            <p class="mb-0">You have 4 items in your cart</p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">
+                                                <span class="text-muted">Sort by:</span>
+                                                <a class="text-body">price <i class="fas fa-angle-down mt-1"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="images/bottle.jpg" alt="705 bottle"
+                                                            class="img-fluid rounded-3"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Hot/Cold bottle</h5>
+                                                        <p class="small mb-0">Hot/Cold Bottle</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">2</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$70</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="images/shirt.jpg" alt="705 shirt"
+                                                            class="img-fluid rounded-3"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Men Shirt</h5>
+                                                        <p class="small mb-0">Pitch Black</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">2</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$60</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="images/bottle.jpg" alt="705 bottle"
+                                                            class="img-fluid rounded-3"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Hot/Cold bottle</h5>
+                                                        <p class="small mb-0">Hot/Cold Bottle</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">1</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$70</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3 mb-lg-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="images/shirt.jpg" alt="705 shirt"
+                                                            class="img-fluid rounded-3"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Men Shirt</h5>
+                                                        <p class="small mb-0">Pitch Black</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">1</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$60</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+    
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Subtotal</p>
+                                    <p class="mb-2">$260.00</p>
+                                </div>
+    
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Shipping</p>
+                                    <p class="mb-2">$9.50</p>
+                                </div>
+    
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-2">Total(Incl. taxes)</p>
+                                    <p class="mb-2">$269.50</p>
+                                </div>
+                                <a href="checkout.html" class="btn btn-primary btn-block hero-btn">
+                                    Proceed to Checkout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center text-lg-start text-white footer-main">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 footer-top">
+            <!-- Left -->
+            <div class="me-5">
+                <span class="footer-header">Connect with us!</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h6 class="text-uppercase fw-bold footer-header">DesiWear</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        DesiWear: Your Fashion Destination for Desi Dazzle –
+                        Embrace the Culture, Own the Style, and Slay Every Day!
+                    </p>
+                </div>
+                <div class="col">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold footer-header">Category</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white">Women's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Men's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Kids</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Accessories</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <h6 class="text-uppercase fw-bold footer-header">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Help</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © <span id="currentYear"></span> Copyright:
+            <a class="text-white" href="/">DesiWear</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/notyf.min.js"></script>
+    <script src="js/script.js"></script> <!-- Custom JavaScript -->
+</body>
+
+</html>

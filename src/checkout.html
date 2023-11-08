@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boostrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--Notfy CSS-->
+    <link rel="stylesheet" href="css/notyf.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Custom CSS -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>DesiWear - Online Fashion Store</title>
+
+    <meta name="description" content="DesiWear Pakistan top traditional clothing" />
+    <meta name="keywords" content="Traditional Clothing, Clothing, Pakistan Clothing, Desi, DesiWear" />
+    <meta property="og:title" content="DesiWear Clothing" />
+    <meta property="og:description" content="DesiWear Pakistan Traditional Clothing" />
+    <meta property="og:image" content="https://desiwear.jajobs.gq/images/logo.png" />
+    <meta property="og:url" content="https://desiwear.jajobs.gq" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@desiwear" />
+    <meta name="twitter:title" content="DesiWear Clothing" />
+    <meta name="twitter:description" content="DesiWear Pakistan Traditional Clothing" />
+    <meta name="twitter:image" content="https://desiwear.jajobs.gq/images/logo.png" />
+    <link rel="canonical" href="https://desiwear.jajobs.gq" />
+</head>
+
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="carousel slide carousel-fade" id="top-bar-carousel" data-bs-interval="3000"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">🎈🎈Sale on children items🎈🎈</a>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="free-shipping-banner">
+                            <a href="#">⏳⏳ Free shipping on orders over $50 ⏳⏳</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#top-bar-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#top-bar-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo.png" alt="DesiWea Logo" style="width:80px;" class="rounded-pill">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product_listing.html">Shop Now</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+    
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown pr-3">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Currency <span id="selectedCurrency"><i>USD</i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('USD')">USD</a></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('EUR')">EUR</a></li>
+                            <li><a class="dropdown-item" onclick="setCurrency('GBP')">GBP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart (0)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i> Wishlist (0)
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown  ">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/images/logo.png" alt="Profile" class="rounded-circle" style="width:50px;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Items -->
+    <section class="h-100 cart-container">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4 class="mb-3">
+                                        <a href="/">Continue Shopping</a>
+                                    </h4>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <p class="mb-1">Shopping cart</p>
+                                            <p class="mb-0">You have 4 items in your cart</p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">
+                                                <span class="text-muted">Sort by:</span>
+                                                <a class="text-body">price <i class="fas fa-angle-down mt-1"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://cripifpphbfqxgktxfbl.supabase.co/storage/v1/object/public/desiwer-images/bottle.jpg"
+                                                            class="img-fluid rounded-3" alt="Shopping item"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Hot/Cold bottle</h5>
+                                                        <p class="small mb-0">Hot/Cold Bottle</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">2</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$70</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://cripifpphbfqxgktxfbl.supabase.co/storage/v1/object/public/desiwer-images/plain-shirt.jpg"
+                                                            class="img-fluid rounded-3" alt="Shopping item"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Men Shirt</h5>
+                                                        <p class="small mb-0">Pitch Black</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">2</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$60</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://cripifpphbfqxgktxfbl.supabase.co/storage/v1/object/public/desiwer-images/bottle.jpg"
+                                                            class="img-fluid rounded-3" alt="Shopping item"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Hot/Cold bottle</h5>
+                                                        <p class="small mb-0">Hot/Cold Bottle</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">1</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$70</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card mb-3 mb-lg-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://cripifpphbfqxgktxfbl.supabase.co/storage/v1/object/public/desiwer-images/plain-shirt.jpg"
+                                                            class="img-fluid rounded-3" alt="Shopping item"
+                                                            style="width: 65px;">
+                                                    </div>
+                                                    <div class="ms-3">
+                                                        <h5 class="primary-text">Seven Zero Five Men Shirt</h5>
+                                                        <p class="small mb-0">Pitch Black</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div style="width: 50px;">
+                                                        <h5 class="fw-normal mb-0">1</h5>
+                                                    </div>
+                                                    <div style="width: 80px;">
+                                                        <h5 class="mb-0 primary-text">$60</h5>
+                                                    </div>
+                                                    <a><i class="fas fa-trash-alt"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6">
+                                    <h4 class="mb-3">Billing Address</h4>
+                                    <hr>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName">First name</label>
+                                                <input type="text" class="form-control form-control-lg" id="firstName"
+                                                    placeholder="First Name" value="" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName">Last name</label>
+                                                <input type="text" class="form-control form-control-lg" id="lastName"
+                                                    placeholder="Last Name" value="" required>
+                                            </div>
+                                        </div>
+    
+                                        <div class="mb-3">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control form-control-lg" id="email"
+                                                placeholder="your@example.com">
+                                        </div>
+    
+                                        <div class="mb-3">
+                                            <label for="address">Address</label>
+                                            <input type="text" class="form-control form-control-lg" id="address"
+                                                placeholder="44 W Main Street" required>
+                                        </div>
+    
+                                        <div class="mb-3">
+                                            <label for="address2">Address 2</label>
+                                            <input type="text" class="form-control form-control-lg" id="address2"
+                                                placeholder="Apartment or suite">
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-md-5 mb-3">
+                                                <label for="country">Country</label>
+                                                <select class="form-control form-control-lg d-block w-100" id="country" required>
+                                                    <option value="">Choose...</option>
+                                                    <option value="">Jamaica</option>
+                                                    <option value="">United Kingdom</option>
+                                                    <option value="">Canada</option>
+                                                    <option value="">South Africa</option>
+                                                    <option value="">Japan</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="col-md-4 mb-3">
+                                                <label for="state">State</label>
+                                                <select class="form-control form-control-lg d-block w-100" id="state" required>
+                                                    <option value="">Choose...</option>
+                                                    <option>California</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="zip">Zip</label>
+                                                <input type="text" class="form-control form-control-lg" id="zip" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Zip code required.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mb-4">
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="sameAddress">
+                                            <label class="custom-control-label" for="sameAddress">
+                                                Shipping address is the same as my billing address
+                                            </label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="checkbox" class="form-check-input" id="save-info">
+                                            <label class="custom-control-label" for="save-info">
+                                                Save this information for next time
+                                            </label>
+                                        </div>
+                                        
+                                        <div id="shippingDetails">
+                                            <h4 class="mb-3">Shipping Address</h4>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="firstNameShipping">First name</label>
+                                                    <input type="text" class="form-control form-control-lg" id="firstNameShipping" placeholder="First Name" required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="lastNameShipping">Last name</label>
+                                                    <input type="text" class="form-control form-control-lg" id="lastNameShipping" placeholder="Last Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="emailShipping">Email</label>
+                                                <input type="email" class="form-control form-control-lg" id="emailShipping" placeholder="your@example.com">
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <label for="addressShipping">Address</label>
+                                                <input type="text" class="form-control form-control-lg" id="addressShipping" placeholder="44 W Main Street" required>
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <label for="addressShipping2">Address 2</label>
+                                                <input type="text" class="form-control form-control-lg" id="addressShipping2" placeholder="Apartment or suite">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5 mb-3">
+                                                    <label for="countryShipping">Country</label>
+                                                    <select class="form-control form-control-lg d-block w-100" id="countryShipping" required>
+                                                        <option value="">Choose...</option>
+                                                        <option value="">Jamaica</option>
+                                                        <option value="">United Kingdom</option>
+                                                        <option value="">Canada</option>
+                                                        <option value="">South Africa</option>
+                                                        <option value="">Japan</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="stateShipping">State</label>
+                                                    <select class="form-control form-control-lg d-block w-100" id="stateShipping" required>
+                                                        <option value="">Choose...</option>
+                                                        <option>California</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="zipShipping">Zip</label>
+                                                    <input type="text" class="form-control form-control-lg" id="zipShipping"required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mb-4">
+    
+                                    </form>
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h5 class="mb-0" style="font-size: 1.5rem;">Card details</h5>
+                                    </div>
+    
+                                    <!--Payment cards-->
+                                    <p class="small mb-2">Card type</p>
+                                    <a type="button" class="text-white">
+                                        <img src="images/mastercard.png" alt="Mastercard" style="height: 50px;">
+                                    </a>
+                                    <a type="button" class="text-white">
+                                        <img src="images/visa.png" alt="Mastercard" style="height: 50px;">
+                                    </a>
+                                    <a type="button" class="text-white">
+                                        <img src="images/amex.png" alt="Mastercard" style="height: 50px;">
+                                    </a>
+                                    <a type="button" class="text-white">
+                                        <img src="images/paypal.png" alt="Mastercard" style="height: 50px;">
+                                    </a>
+    
+                                    <div class="mt-4">
+                                        <div class="form-outline form-white mb-4">
+                                            <label class="form-label" for="typeName">Cardholder's Name</label>
+                                            <input type="text" id="typeName" class="form-control form-control-lg" size="17"
+                                                placeholder="Cardholder's Name"
+                                             />
+                                        </div>
+    
+                                        <div class="form-outline form-white mb-4">
+                                            <label class="form-label" for="cardNumber">Card Number</label>
+                                            <input type="number" id="cardNumber" class="form-control form-control-lg"
+                                                size="17" placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" 
+                                            />
+                                        </div>
+    
+                                        <div class="row mb-4">
+                                            <div class="col-md-6">
+                                                <div class="form-outline form-white">
+                                                    <label class="form-label" for="typeExp">Expiration</label>
+                                                    <input type="text" id="typeExp" class="form-control form-control-lg"
+                                                        placeholder="MM/YYYY" size="7" id="exp" minlength="7"
+                                                        maxlength="7" 
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-outline form-white">
+                                                    <label class="form-label" for="typeText">CVV</label>
+                                                    <input type="password" id="typeText"
+                                                        class="form-control form-control-lg"
+                                                        placeholder="***********" minlength="3"
+                                                        maxlength="4" 
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <hr class="my-4">
+    
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Subtotal</p>
+                                        <p class="mb-2">$260.00</p>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Shipping</p>
+                                        <p class="mb-2">$9.50</p>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <p class="mb-2">Total(Incl. taxes)</p>
+                                        <p class="mb-2">$269.50</p>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-block" id="btnPayNow">
+                                        Pay Now
+                                    </button>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-center text-lg-start text-white footer-main">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 footer-top">
+            <!-- Left -->
+            <div class="me-5">
+                <span class="footer-header">Connect with us!</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h6 class="text-uppercase fw-bold footer-header">DesiWear</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        DesiWear: Your Fashion Destination for Desi Dazzle –
+                        Embrace the Culture, Own the Style, and Slay Every Day!
+                    </p>
+                </div>
+                <div class="col">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold footer-header">Category</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white">Women's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Men's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Kids</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Accessories</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <h6 class="text-uppercase fw-bold footer-header">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Help</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © <span id="currentYear"></span> Copyright:
+            <a class="text-white" href="/">DesiWear</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/notyf.min.js"></script>
+    <script src="js/script.js"></script> <!-- Custom JavaScript -->
+</body>
+
+</html>
